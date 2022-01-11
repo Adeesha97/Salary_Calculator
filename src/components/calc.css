@@ -1,6 +1,6 @@
 .chartDiv{
     top: 132px;
-    left: 830px;
+    /*left: 830px;*/
     /*height: 614px;*/
     border: 1px solid #E0E0E0;
     box-sizing: border-box;
@@ -9,7 +9,7 @@
 
 }
 .formDiv{
-    left: 130px;
+    /*left: 130px;*/
     top: 132px;
     /*height: 614px;*/
     border: 1px solid #E0E0E0;
@@ -27,7 +27,9 @@
     border: 1px solid #E0E0E0;
     box-sizing: border-box;
     border-radius: 8px;
-    padding:8px;
+    padding-top: 10px;
+    padding-left: 12px;
+    margin-right: 2px;
 }
 .contPara{
     margin-bottom:1px;

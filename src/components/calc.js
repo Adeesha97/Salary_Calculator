@@ -124,7 +124,7 @@ const Calc= () => {
         <container>
             <div style={{padding: '35px'}} className="row">
                 {/*Main Form*/}
-                <form className="col-6 formDiv">
+                <form className="col-5 formDiv" style={{marginLeft:"70px"}}>
                     <h1>Calculate Your Salary</h1>
                     <br/>
                     <div className="col-6">
@@ -249,7 +249,7 @@ const Calc= () => {
                 </form>
 
                 {/*chart*/}
-                <form className="col-6 chartDiv">
+                <form className="col-5 chartDiv" style={{marginLeft:"110px"}}>
                     <h1 >Your Salary</h1>
                     <div className="row chartSmallDivs">
                         <small  className="col-9 subText">Items</small>
@@ -271,7 +271,7 @@ const Calc= () => {
                         <p className="col-2">{employeeEPF}</p>
                     </div>
 
-                    <div  className="row netSalDiv">
+                    <div  className=" netSalDiv">
                         <h4 className="col-10">Net Salary (Take Home)</h4>
                         <p className="col-2">{netSalary}</p>
                     </div>
