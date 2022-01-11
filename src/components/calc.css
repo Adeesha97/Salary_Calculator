@@ -1,0 +1,17 @@
+.chartDiv{
+    top: 132px;
+    left: 830px;
+    /*height: 614px;*/
+    border: 1px solid #E0E0E0;
+    box-sizing: border-box;
+    border-radius: 8px;
+
+}
+.formDiv{
+    left: 130px;
+    top: 132px;
+    /*height: 614px;*/
+    border: 1px solid #E0E0E0;
+    box-sizing: border-box;
+    border-radius: 8px;
+}
