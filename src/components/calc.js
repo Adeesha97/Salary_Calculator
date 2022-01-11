@@ -85,7 +85,7 @@ const Calc= () => {
         setGrossDeduction(sumDeduction)
 
         // calculate sumOfEpfAllowance
-        let sumOfEpfAllowance = 0
+        let sumOfEpfAllowance = 0.00
         allowanceList.forEach(sumOfEpf);
 
         function sumOfEpf(item) {
@@ -94,27 +94,27 @@ const Calc= () => {
         }
 
         // Employee EPF(8%)
-        let employeeEpf = 0
+        let employeeEpf = 0.00
         employeeEpf = (parseInt(salary) + sumOfEpfAllowance) * 0.08
         setEmployeeEPF(employeeEpf)
 
         // Employer EPF(12%)
-        let employerEpf = 0
+        let employerEpf = 0.00
         employerEpf = (parseInt(salary) + sumOfEpfAllowance) * 0.12
         setEmployerEPF(employerEpf)
 
         // Employer ETF(3%)
-        let employerEtf = 0
+        let employerEtf = 0.00
         employerEtf = (parseInt(salary) + sumOfEpfAllowance) * 0.03
         setEmployerETF(employerEtf)
 
         // Net Salary
-        let netSal = 0
+        let netSal = 0.00
         netSal = gSalary - sumDeduction - employeeEpf
         setNetSalary(netSal)
 
         // Cost To Company
-        let costCompany = 0
+        let costCompany = 0.00
         costCompany = gSalary - sumDeduction + employerEpf + employerEtf
         setCostToCompany(costCompany)
 
@@ -272,8 +272,10 @@ const Calc= () => {
                     </div>
 
                     <div  className=" netSalDiv">
-                        <h4 className="col-10">Net Salary (Take Home)</h4>
-                        <p className="col-2">{netSalary}</p>
+                        <div className="row">
+                            <h4 className="col-9">Net Salary (Take Home)</h4>
+                            <h5 className="col-3 ">{netSalary}</h5>
+                        </div>
                     </div>
 
                     <p  className="subText contPara">Contribution from the Employer</p>
@@ -285,7 +287,7 @@ const Calc= () => {
                     </div>
 
                     <div className="row chartSmallDivs">
-                    <label className="form-label col-10">Employeer ETF (3%)</label>
+                    <label className="form-label col-10">Employer ETF (3%)</label>
                     <p className="col-2">{employerETF}</p>
                     </div>
 
