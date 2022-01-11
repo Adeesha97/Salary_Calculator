@@ -17,6 +17,16 @@ const Calc= () => {
     const [netSalary, setNetSalary] = useState()
     const [costToCompany,setCostToCompany] = useState()
 
+    // const initialState = {
+    //     allowanceList = {allowance:"", epf:false},
+    //     deductionList = {deduction:""} ,
+    //     grossSalary= 0,
+    //     employeeEPF= 0,
+    //     EmployerEPF= 0,
+    //     employerETF= 0,
+    //     costToCompany= 0
+    // },
+
     console.log(allowanceList)
     console.log(deductionList)
 
