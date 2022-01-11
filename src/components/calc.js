@@ -251,45 +251,45 @@ const Calc= () => {
                 {/*chart*/}
                 <form className="col-6 chartDiv">
                     <h1 >Your Salary</h1>
-                    <div className="row">
-                        <p className="col-9">Items</p>
-                        <p className="col-3">Amount</p>
+                    <div className="row chartSmallDivs">
+                        <small  className="col-9 subText">Items</small>
+                        <small  className="col-3 subText">Amount</small>
                     </div>
 
-                    <div className="row">
+                    <div className="row chartSmallDivs">
                         <label className="form-label col-10">Gross Earning</label>
                         <p className="col-2">{grossSalary}</p>
                     </div>
 
-                    <div className="row">
+                    <div className="row chartSmallDivs">
                         <label className="form-label col-10">Gross Deduction</label>
                         <p className="col-2">{grossDeduction}</p>
                     </div>
 
-                    <div className="row">
+                    <div className="row chartSmallDivs">
                         <label className="form-label col-10">Employee EPF (8%)</label>
                         <p className="col-2">{employeeEPF}</p>
                     </div>
 
-                    <div style={{border: "1px solid #E0E0E0", boxSizing: "border-box", borderRadius: "8px", padding:"8px"}} className="row">
+                    <div  className="row netSalDiv">
                         <h4 className="col-10">Net Salary (Take Home)</h4>
                         <p className="col-2">{netSalary}</p>
                     </div>
 
-                    <label style={{marginBottom:"5px", marginTop:"5px"}} >Contribution from the Employer</label>
+                    <p  className="subText contPara">Contribution from the Employer</p>
                     <br/>
 
-                    <div className="row">
-                    <label className="form-label col-10">Employeer EPF (12%)</label>
+                    <div className="row chartSmallDivs">
+                    <label className="form-label col-10"> Employer EPF (12%)</label>
                     <p className="col-2">{EmployerEPF}</p>
                     </div>
 
-                    <div className="row">
+                    <div className="row chartSmallDivs">
                     <label className="form-label col-10">Employeer ETF (3%)</label>
                     <p className="col-2">{employerETF}</p>
                     </div>
 
-                    <div className="row">
+                    <div className="row chartSmallDivs">
                     <label className="form-label col-10">CTC (Cost to Company)</label>
                     <p className="col-2">{costToCompany}</p>
                     </div>
